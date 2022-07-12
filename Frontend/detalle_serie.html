@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/detalle_serie/header.css">
+    <link rel="stylesheet" href="./css/detalle_serie/main.css">
+    <title>DetalleSerie</title>
+    <script src="https://kit.fontawesome.com/69e60473f4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+          rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+</head>
+<!--   -->
+<body style="display:none">
+    <header>
+        <div class="contenedor">
+            <h2 class="logo__principal">SeriesLatam</h2>
+            <nav class="nav__menu">
+                <a class="menu__links" id="activo" href="#">Inicio</a>
+                <a class="menu__links" href="#">Mis Favoritos</a>
+                <a class="menu__links" href="#">Salir</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="serie__principal">
+            <div id="img">
+                <img id="miniatura" src="img/jurassic/fondo.jpg" alt="fondo.jpg">
+            </div>
+            <div class="serie__contenido">
+                <h2 class="serie__titulo" id="titulo">Jurassic World: Dominion (2022)</h2>
+                <p class="serie__descripcion" id="descripcion">
+                    Cuatro años después de la destrucción de Isla Nublar, los dinosaurios conviven – y cazan – con los
+                    seres humanos en todo el mundo. Este frágil equilibrio cambiará el futuro y decidirá, de una vez por
+                    todas, si los seres humanos seguirán en la cúspide de los depredadores en un planeta que comparten
+                    con los animales más temibles de la creación.
+                </p>
+                <!-- <button role="button" class="pelicula__boton"><i id="i1" class="fa-solid fa-play"></i>Reproducir</button> -->
+                <!-- <button role="button" class="pelicula__boton"><i id="i2" class="fa-solid fa-circle-info"></i>Más información</button> -->
+            </div>
+        </div>
+
+        <div class="temporadas">
+            <div class="contenedor__temporada" x-data="{mostrar : false}">
+                <button id="btn__mostrar" @click="mostrar = !mostrar">Temporada 1</button>
+                <div class="contenedor__episodios" x-show="mostrar">
+                    <div class="episodio">
+                        <a href="#"><img class="img__episodio" src="./img/laCiudadPerdida/la_ciudad_perdida_fondo.jpg" alt="la_ciudad_perdida_fondo.jpg"></a>
+                    </div>
+                    <div class="episodio">
+                        <a href="#"><img class="img__episodio" src="./img/noWayHome/no_way_home_fondo.jpg" alt="no_way_home_fondo.jpg"></a>
+                    </div>
+                    <div class="episodio">
+                        <a href="#"><img class="img__episodio" src="./img/residentEvil/resident_evil_fondo.jpg" alt="resident_evil_fondo.jpg"></a>
+                    </div>
+                    <div class="episodio">
+                        <a href="#"><img class="img__episodio" src="./img/Sonic2/sonic_fondo.jpg" alt="sonic_fondo.jpg"></a>
+                    </div>
+                    <div class="episodio">
+                        <a href="#"><img class="img__episodio" src="./img/theBatman/the_batman_fondo.jpg" alt="the_batman_fondo.jpg"></a>
+                    </div>
+                    <div class="episodio">
+                        <a href="#"><img class="img__episodio" src="./img/uncharted/uncharted_fondo.jpg" alt="uncharted_fondo.jpg"></a>
+                    </div>
+                </div>
+
+                <div class="contenedor__temporada" x-data="{mostrar : false}">
+                    <button id="btn__mostrar" @click="mostrar = !mostrar">Temporada 2</button>
+                    <div class="contenedor__episodios" x-show="mostrar">
+                        <div class="episodio">
+                            <a href="#"><img class="img__episodio" src="./img/laCiudadPerdida/la_ciudad_perdida_fondo.jpg" alt="la_ciudad_perdida_fondo.jpg"></a>
+                        </div>
+                        <div class="episodio">
+                            <a href="#"><img class="img__episodio" src="./img/noWayHome/no_way_home_fondo.jpg" alt="no_way_home_fondo.jpg"></a>
+                        </div>
+                        <div class="episodio">
+                            <a href="#"><img class="img__episodio" src="./img/residentEvil/resident_evil_fondo.jpg" alt="resident_evil_fondo.jpg"></a>
+                        </div>
+                        <div class="episodio">
+                            <a href="#"><img class="img__episodio" src="./img/Sonic2/sonic_fondo.jpg" alt="sonic_fondo.jpg"></a>
+                        </div>
+                        <div class="episodio">
+                            <a href="#"><img class="img__episodio" src="./img/theBatman/the_batman_fondo.jpg" alt="the_batman_fondo.jpg"></a>
+                        </div>
+                        <div class="episodio">
+                            <a href="#"><img class="img__episodio" src="./img/uncharted/uncharted_fondo.jpg" alt="uncharted_fondo.jpg"></a>
+                        </div>
+                    </div>
+
+
+                </div>
+    </main>
+
+    <script src="js/utils.js"></script>
+    <script src="js/detalle_serie.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- <div class="peliculas__recomendadas"> -->
+<!-- <div class="peliculas__recomendadas__titulo"> -->
+<!-- <h3 class="titulo__recomendados">Películas Recomendadas</h3> -->
+<!-- <div class="indicadores"> -->
+<!-- <button class="indicador__button"></button>
+<button class="indicador__button"></button> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- <div class="contenedor__principal"> -->
+<!-- <button role="button" id="flecha__izquierda" class="flecha__izquierda"><i class="fa-solid fa-angle-left"></i></button> -->
+<!-- <div class="contenedor__carousel"> -->
+<!-- <div class="carousel"> -->
+<!-- <div class="pelicula"> -->
+<!-- <a href="#"><img class="img__pelicula" src="./img/laCiudadPerdida/la_ciudad_perdida_fondo.jpg" alt="la_ciudad_perdida_fondo.jpg"></a> -->
+<!-- </div> -->
+<!-- <div class="pelicula"> -->
+<!-- <a href="#"><img class="img__pelicula" src="./img/noWayHome/no_way_home_fondo.jpg" alt="no_way_home_fondo.jpg"></a> -->
+<!-- </div> -->
+<!-- <div class="pelicula"> -->
+<!-- <a href="#"><img class="img__pelicula" src="./img/residentEvil/resident_evil_fondo.jpg" alt="resident_evil_fondo.jpg"></a> -->
+<!-- </div> -->
+<!-- <div class="pelicula"> -->
+<!-- <a href="#"><img class="img__pelicula" src="./img/Sonic2/sonic_fondo.jpg" alt="sonic_fondo.jpg"></a> -->
+<!-- </div> -->
+<!-- <div class="pelicula"> -->
+<!-- <a href="#"><img class="img__pelicula" src="./img/theBatman/the_batman_fondo.jpg" alt="the_batman_fondo.jpg"></a> -->
+<!-- </div> -->
+<!-- <div class="pelicula"> -->
+<!-- <a href="#"><img class="img__pelicula" src="./img/uncharted/uncharted_fondo.jpg" alt="uncharted_fondo.jpg"></a> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- <button role="button" id="flecha__derecha" class="flecha__derecha"><i class="fa-solid fa-angle-right"></i></button> -->
+<!-- </div> -->
+<!-- </div> -->

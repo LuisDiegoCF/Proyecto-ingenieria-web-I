@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes</title>
+    <link rel="stylesheet" href="./css/registro_cliente/header.css">
+    <link rel="stylesheet" href="./css/registro_cliente/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+<body style="display:none">
+    <header>
+        <div class="cabecera">
+            <div>
+                <h1 class="cabecera__logo">SeriesLatam</h1>
+            </div>
+            <div>
+                <button class="btn__sesion" id="btn_iniciarS">Iniciar sesión</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form>
+            <div class="formulario">
+                <p class="dato parrafo">Ingrese sus datos</p>
+
+                <input class="dato" type="text" id="inputNombres" name="nombres" placeholder="Nombre completo">
+
+                <!--<input class="dato" type="text" id="inputApellidos" name="apellidos" placeholder="Apellidos">-->
+
+                <input class="dato" type="text" id="inputUser" name="usuario" placeholder="Nombre de usuario">
+
+                <input class="dato" type="password" id="inputPassword" name="password" placeholder="Contraseña">
+
+                <div class="dato dato__checkbox">
+                    <input type="checkbox" id="ofertas" name="ofertas" value="ofertas">
+                    <label for="ofertas">
+                        ¡Sí! Quier recibir actualizaciones, ofertas especiales y otra información
+                        de SERIESLATAM.
+                    </label>
+                </div>
+                <div class="dato__checkbox" style="display: none; text-align: center; color: red;" id="validation-nombre">
+                    El Nombre completo es requerido
+                </div>
+                <div class="dato__checkbox" style="display: none; text-align: center; color: red;" id="validation-user">
+                    El Nombre de usuario es requerido
+                </div>
+                <div class="dato__checkbox" style="display: none; text-align: center; color: red;" id="validation-password">
+                    La Contraseña es requerida
+                </div>
+                <div class="dato__checkbox" style="display: none; text-align: center; color: red;" id="validation-userName">
+                    El nombre de usuario ya existe
+                </div>
+                <input class="dato btn__aceptar" id="btn_aceptar" type="button" value="ACEPTAR Y SUSCRIBIRSE">
+            </div>
+        </form>
+    </main>
+    <script src="js/utils.js"></script>
+    <script src="js/registro_cliente.js"></script>
+</body>
+</html>

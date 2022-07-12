@@ -1,0 +1,55 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url('../../img/moduloCliente/fondo_modulo_cliente.jpg');
+    background-size: cover;
+    color: #ffffff;
+}
+
+.contenedor_cabecera {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cabecera__logo {
+    color: #E50914;
+    font-size: 24px;
+    font-family: 'Bebas', sans-serif;
+}
+
+.btn__sesion {
+    border-radius: 5px;
+    background-color: #35313F;
+    padding: 10px 20px;
+    color: #ffffff;
+    border: 0px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media(min-width: 768px) {
+    .contenedor_cabecera {
+        justify-content: space-between;
+    }
+    .cabecera__logo {
+        color: #E50914;
+        font-size: 36px;
+    }
+    .btn__sesion {
+        font-size: 26px;
+    }
+}
+
+@media(min-width: 992px) {
+    .contenedor_cabecera {
+        justify-content: space-between;
+    }
+    .cabecera__logo {
+        color: #E50914;
+        font-size: 50px;
+    }
+    .btn__sesion {
+        font-size: 30px;
+    }
+}

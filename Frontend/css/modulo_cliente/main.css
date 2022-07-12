@@ -1,0 +1,67 @@
+.presentacion {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.presentacion__contenedores {
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-family: 'Bebas', sans-serif;
+    font-size: 45px;
+    color: #E50914;
+}
+
+.descripcion{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn_suscripcion {
+    border-radius: 5px;
+    background-color: #6421FF;
+    padding: 10px 50px;
+    color: #ffffff;
+    border: 3px solid #FC422F;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+@media(min-width: 768px) {
+    .presentacion__contenedores {
+        margin-bottom: 60px;
+    }
+
+    .descripcion{
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .btn_suscripcion {
+        font-size: 20px;
+        border: 0px;
+        border-radius: 20px;
+    }
+}
+
+@media(min-width: 992px) {
+    .logo {
+        font-family: 'Bebas', sans-serif;
+        font-size: 75px;
+        color: #E50914;
+    }
+
+    .descripcion{
+        font-size: 26px;
+    }
+
+    .btn_suscripcion {
+        font-size: 25px;
+        border: 0px;
+        border-radius: 15px;
+    }
+}
